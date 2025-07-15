@@ -1,0 +1,164 @@
+[
+  {
+    "ContainingType": "MiniApi.EndpointsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterUserEndpoints\u003Eb__2_0",
+    "RelativePath": "users",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MiniApi.Model.User, MiniApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllUsers"
+  },
+  {
+    "ContainingType": "MiniApi.EndpointsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterUserEndpoints\u003Eb__2_1",
+    "RelativePath": "users",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "MiniApi.Model.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MiniApi.Model.User",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateUser"
+  },
+  {
+    "ContainingType": "MiniApi.EndpointsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterNoteEndpoints\u003Eb__3_0",
+    "RelativePath": "users/{userId}/notes",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MiniApi.Model.Note, MiniApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllUserNotes"
+  },
+  {
+    "ContainingType": "MiniApi.EndpointsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterNoteEndpoints\u003Eb__3_1",
+    "RelativePath": "users/{userId}/notes",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "note",
+        "Type": "MiniApi.Model.Note",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MiniApi.Model.Note",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateNote"
+  },
+  {
+    "ContainingType": "MiniApi.EndpointsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterNoteEndpoints\u003Eb__3_2",
+    "RelativePath": "users/{userId}/notes/{noteId}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "noteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "note",
+        "Type": "MiniApi.Model.Note",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MiniApi.Model.Note",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateNote"
+  },
+  {
+    "ContainingType": "MiniApi.EndpointsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterNoteEndpoints\u003Eb__3_3",
+    "RelativePath": "users/{userId}/notes/{noteId}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "noteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteNote"
+  }
+]
